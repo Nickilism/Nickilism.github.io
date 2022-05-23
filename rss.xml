@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Nicked Thinked</title><link>https://nickilism.github.io/</link><description>MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</description><generator>Hugo 0.99.1 https://gohugo.io/</generator><language>zh-CN</language><lastBuildDate>Mon, 23 May 2022 07:55:03 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://nickilism.github.io/rss.xml"/><item><title>用 Github Action 来提交 Hugo 以便在 iOS 上写博客</title><link>https://nickilism.github.io/archive/22-05-23-%E7%94%A8githubaction%E6%9D%A5%E6%8F%90%E4%BA%A4hugo%E5%8D%9A%E5%AE%A2/</link><guid isPermaLink="true">https://nickilism.github.io/archive/22-05-23-%E7%94%A8githubaction%E6%9D%A5%E6%8F%90%E4%BA%A4hugo%E5%8D%9A%E5%AE%A2/</guid><pubDate>Mon, 23 May 2022 12:50:45 +0800</pubDate><description>&lt;h2 id="前言">前言&lt;/h2>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Nicked Thinked</title><link>https://nickilism.github.io/</link><description>MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</description><generator>Hugo 0.99.1 https://gohugo.io/</generator><language>zh-CN</language><lastBuildDate>Mon, 23 May 2022 08:15:52 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://nickilism.github.io/rss.xml"/><item><title>用 Github Action 来提交 Hugo 以便在 iOS 上写博客</title><link>https://nickilism.github.io/archive/22-05-23-%E7%94%A8githubaction%E6%9D%A5%E6%8F%90%E4%BA%A4hugo%E5%8D%9A%E5%AE%A2/</link><guid isPermaLink="true">https://nickilism.github.io/archive/22-05-23-%E7%94%A8githubaction%E6%9D%A5%E6%8F%90%E4%BA%A4hugo%E5%8D%9A%E5%AE%A2/</guid><pubDate>Mon, 23 May 2022 12:50:45 +0800</pubDate><description>&lt;h2 id="前言">前言&lt;/h2>
 &lt;p>博客自创建以来已有 4 月余，然而内容更新寥寥。自个儿分析原因，盖因有二：&lt;/p>
 &lt;ul>
 &lt;li>其一，所感所悟甚少，能将之表达者更少；&lt;/li>
@@ -25,10 +25,87 @@
 &lt;p>第4步完成后，照理说会将源码的 public 文件夹内的所有东西都 Push 到 Github Page 中，然而令我纳闷的是仅有几个文件出现在这里，而所有的文章都没有生成。仔细观察，在 Github 网页中我发现源码仓库中的 public 文件夹上面有一个白色的小箭头，而且这个文件夹是无法点进去的。又是一番搜索，原来是在操作第1步的时候，我是将之前的整个文件夹复制粘贴过来的，而其中的 public 文件夹是之前我在进行博客更新的时候 Push 过的，所以会有 .git 文件在，这会导致 Github 将其视作系统的子模块了，根据网上教程又是一番操作，最终才将完整的 public 文件夹进行了 Push.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>上面步骤都完成后，应该可以通过直接写 .md 文件到指定文件夹，再 Push 就能在博客页面看到文章了。这篇文章就是这样操作的，如果能在页面看到，那么就表示成功了(刚试了一下，还没成功！)。后续在 iOS 上操作会用到 WorkingCopy 这个 App，具体的操作流程也简单，就是生成文章抬头上，可能需要再通过 Shortcuts 来解决。&lt;/p>
+&lt;p>上面步骤都完成后，应该可以通过直接写 .md 文件到指定文件夹，再 Push 就能在博客页面看到文章了。这篇文章就是这样操作的，如果能在页面看到，那么就表示成功了。后续在 iOS 上操作会用到 WorkingCopy 这个 App，具体的操作流程也简单，就是生成文章抬头上，可能需要再通过 Shortcuts 来解决。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>很不幸，按照上面的设置完，把这篇文章 Push 后倒是成功的触发了 Github Action，但是 Github Page 没有更新，也就没有生成新的博客文章，又是一番查找比对，应该还是 Github Aciton 代码的问题。加入&lt;code>submodules: true&lt;/code> 后总算解决了，具体原理我也不清楚，应该与我所用的 Hugo Theme 有关。下面贴上我用的 Action 代码：&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;div class="footnotes" role="doc-endnotes">
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">name&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Deploy&lt;/span> &lt;span class="n">Hugo&lt;/span> &lt;span class="n">Site&lt;/span> &lt;span class="n">to&lt;/span> &lt;span class="n">Github&lt;/span> &lt;span class="n">Pages&lt;/span> &lt;span class="n">on&lt;/span> &lt;span class="n">Master&lt;/span> &lt;span class="n">Branch&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">on&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">push&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">branches&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">-&lt;/span> &lt;span class="n">main&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">jobs&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">build&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">deploy&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">runs&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">on&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">ubuntu&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">latest&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">steps&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">-&lt;/span> &lt;span class="n">uses&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">actions&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">checkout&lt;/span>&lt;span class="nd">@v2&lt;/span> &lt;span class="c1"># v2 does not have submodules option now&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">with&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">submodules&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">true&lt;/span> &lt;span class="c1"># Fetch Hugo themes (true OR recursive)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">fetch&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">depth&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="c1"># Fetch all history for .GitInfo and .Lastmod &lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">-&lt;/span> &lt;span class="n">name&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Setup&lt;/span> &lt;span class="n">Hugo&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">uses&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">peaceiris&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">actions&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">hugo&lt;/span>&lt;span class="nd">@v2&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">with&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">hugo&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">version&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s1">&amp;#39;latest&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># extended: true&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">-&lt;/span> &lt;span class="n">name&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Build&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">run&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">hugo&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="n">minify&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">-&lt;/span> &lt;span class="n">name&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Deploy&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">uses&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">peaceiris&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">actions&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">gh&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">pages&lt;/span>&lt;span class="nd">@v3&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">with&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">deploy_key&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="err">$&lt;/span>&lt;span class="p">{{&lt;/span> &lt;span class="n">secrets&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">ACTIONS_DEPLOY_KEY&lt;/span> &lt;span class="p">}}&lt;/span> &lt;span class="c1"># 这里的 ACTIONS_DEPLOY_KEY 则是上面设置 Private Key的变量名&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">external_repository&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Nickilism&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">Nickilism&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">github&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">io&lt;/span> &lt;span class="c1"># Pages 远程仓库 &lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">publish_dir&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;./public&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">keep_files&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">false&lt;/span> &lt;span class="c1"># remove existing files&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">publish_branch&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">master&lt;/span> &lt;span class="c1"># deploying branch&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">commit_message&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="err">$&lt;/span>&lt;span class="p">{{&lt;/span> &lt;span class="n">github&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">event&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">head_commit&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">message&lt;/span> &lt;span class="p">}}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
 &lt;li id="fn:1">
