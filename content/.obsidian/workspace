@@ -1,0 +1,103 @@
+{
+  "main": {
+    "id": "477560bc2152fa31",
+    "type": "split",
+    "children": [
+      {
+        "id": "7219e51148fbabd8",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "archive/22-05-12-NavalQuotes.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "757ec4b797a2930a",
+    "type": "split",
+    "children": [
+      {
+        "id": "c0884382eeb6c3d8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9be43813a77f0f5c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "a645d92e9e820ef1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "dbb68a264d172fc2",
+    "type": "split",
+    "children": [
+      {
+        "id": "6ac085bd4969af1b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ef1b3e3d9067ead7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "archive/22-05-12-NavalQuotes.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "7219e51148fbabd8",
+  "lastOpenFiles": [
+    "archive/22-05-12-NavalQuotes.md",
+    "archive/22-02-28-译文关于写作.md",
+    "archive/22-04-02-包法利夫人.md",
+    "archive/22-02-22-Atomic_Habits.md",
+    "archive/22-01-26-苏格拉底的申辩读后感.md",
+    "archive/22-01-21-第一篇博客.md",
+    "imgs/atomic_habits.jpg.md",
+    "imgs/sacrates.jpg.md",
+    "archive/imgs/atomic_habits.jpg",
+    "archive/imgs/sacrates.jpg"
+  ]
+}
