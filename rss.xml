@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Nicked Thinked</title><link>https://nickilism.github.io/</link><description>MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</description><generator>Hugo 0.99.1 https://gohugo.io/</generator><language>zh-CN</language><lastBuildDate>Mon, 23 May 2022 08:15:52 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://nickilism.github.io/rss.xml"/><item><title>用 Github Action 来提交 Hugo 以便在 iOS 上写博客</title><link>https://nickilism.github.io/archive/22-05-23-%E7%94%A8githubaction%E6%9D%A5%E6%8F%90%E4%BA%A4hugo%E5%8D%9A%E5%AE%A2/</link><guid isPermaLink="true">https://nickilism.github.io/archive/22-05-23-%E7%94%A8githubaction%E6%9D%A5%E6%8F%90%E4%BA%A4hugo%E5%8D%9A%E5%AE%A2/</guid><pubDate>Mon, 23 May 2022 12:50:45 +0800</pubDate><description>&lt;h2 id="前言">前言&lt;/h2>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Nicked Thinked</title><link>https://nickilism.github.io/</link><description>MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</description><generator>Hugo 0.99.1 https://gohugo.io/</generator><language>zh-CN</language><lastBuildDate>Mon, 23 May 2022 08:22:36 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://nickilism.github.io/rss.xml"/><item><title>用 Github Action 来提交 Hugo 以便在 iOS 上写博客</title><link>https://nickilism.github.io/archive/22-05-23-%E7%94%A8githubaction%E6%9D%A5%E6%8F%90%E4%BA%A4hugo%E5%8D%9A%E5%AE%A2/</link><guid isPermaLink="true">https://nickilism.github.io/archive/22-05-23-%E7%94%A8githubaction%E6%9D%A5%E6%8F%90%E4%BA%A4hugo%E5%8D%9A%E5%AE%A2/</guid><pubDate>Mon, 23 May 2022 12:50:45 +0800</pubDate><description>&lt;h2 id="前言">前言&lt;/h2>
 &lt;p>博客自创建以来已有 4 月余，然而内容更新寥寥。自个儿分析原因，盖因有二：&lt;/p>
 &lt;ul>
 &lt;li>其一，所感所悟甚少，能将之表达者更少；&lt;/li>
@@ -19,7 +19,7 @@
 &lt;p>Actions 代码中 Push 的时候要注意是 Push 到哪个 Branches.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>教程1中的 Actions 代码中，&lt;code>publish_dir:&lt;/code>的值是空的，导致运行 Action 后，会将Github Page 的内容变成与源码仓库的内容一样，后来仔细比对了教程2我才发现应该写 &lt;code>publish_dir: ./public&lt;/code>.&lt;/p>
+&lt;p>教程1的 Actions 代码中，&lt;code>publish_dir:&lt;/code>的值是空的，导致运行 Action 后，会将Github Page 的内容变成与源码仓库的内容一样，后来仔细比对了教程2我才发现应该写 &lt;code>publish_dir: ./public&lt;/code>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>第4步完成后，照理说会将源码的 public 文件夹内的所有东西都 Push 到 Github Page 中，然而令我纳闷的是仅有几个文件出现在这里，而所有的文章都没有生成。仔细观察，在 Github 网页中我发现源码仓库中的 public 文件夹上面有一个白色的小箭头，而且这个文件夹是无法点进去的。又是一番搜索，原来是在操作第1步的时候，我是将之前的整个文件夹复制粘贴过来的，而其中的 public 文件夹是之前我在进行博客更新的时候 Push 过的，所以会有 .git 文件在，这会导致 Github 将其视作系统的子模块了，根据网上教程又是一番操作，最终才将完整的 public 文件夹进行了 Push.&lt;/p>
