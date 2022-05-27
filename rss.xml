@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Nicked Thinked</title><link>https://nickilism.github.io/</link><description>MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</description><generator>Hugo 0.99.1 https://gohugo.io/</generator><language>zh-CN</language><lastBuildDate>Fri, 27 May 2022 11:47:17 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://nickilism.github.io/rss.xml"/><item><title>用 Github Action 来提交 Hugo 以便在 iOS 上写博客</title><link>https://nickilism.github.io/archive/22-05-23-%E7%94%A8githubaction%E6%9D%A5%E6%8F%90%E4%BA%A4hugo%E5%8D%9A%E5%AE%A2/</link><guid isPermaLink="true">https://nickilism.github.io/archive/22-05-23-%E7%94%A8githubaction%E6%9D%A5%E6%8F%90%E4%BA%A4hugo%E5%8D%9A%E5%AE%A2/</guid><pubDate>Mon, 23 May 2022 12:50:45 +0800</pubDate><description>&lt;h2 id="前言">前言&lt;/h2>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Nicked Thinked</title><link>https://nickilism.github.io/</link><description>MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</description><generator>Hugo 0.99.1 https://gohugo.io/</generator><language>zh-CN</language><lastBuildDate>Fri, 27 May 2022 11:58:37 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://nickilism.github.io/rss.xml"/><item><title>用 Github Action 来提交 Hugo 以便在 iOS 上写博客</title><link>https://nickilism.github.io/archive/22-05-23-%E7%94%A8githubaction%E6%9D%A5%E6%8F%90%E4%BA%A4hugo%E5%8D%9A%E5%AE%A2/</link><guid isPermaLink="true">https://nickilism.github.io/archive/22-05-23-%E7%94%A8githubaction%E6%9D%A5%E6%8F%90%E4%BA%A4hugo%E5%8D%9A%E5%AE%A2/</guid><pubDate>Mon, 23 May 2022 12:50:45 +0800</pubDate><description>&lt;h2 id="前言">前言&lt;/h2>
 &lt;p>博客自创建以来已有 4 月余，然而内容更新寥寥。自个儿分析原因，盖因有二：&lt;/p>
 &lt;ul>
 &lt;li>其一，所感所悟甚少，能将之表达者更少；&lt;/li>
@@ -399,36 +399,70 @@
 &lt;p>&lt;a href="https://zz2summer.github.io/github-pages-hugo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">https://zz2summer.github.io/github-pages-hugo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/&lt;/a>&amp;#160;&lt;a href="https://nickilism.github.io/archive/22-01-21-%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/div></description><category domain="https://nickilism.github.io/categories/%E6%95%99%E7%A8%8B/">教程</category><category domain="https://nickilism.github.io/tags/tech/">Tech</category><category domain="https://nickilism.github.io/tags/thoughts/">Thoughts</category><category domain="https://nickilism.github.io/tags/blog/">Blog</category></item><item><title>通过 iOS 发布的博文</title><link>https://nickilism.github.io/archive/22-05-27-%E9%80%9A%E8%BF%87-ios-%E5%8F%91%E5%B8%83%E7%9A%84%E5%8D%9A%E6%96%87/</link><guid isPermaLink="true">https://nickilism.github.io/archive/22-05-27-%E9%80%9A%E8%BF%87-ios-%E5%8F%91%E5%B8%83%E7%9A%84%E5%8D%9A%E6%96%87/</guid><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><description>&lt;h1 id="前言">前言&lt;/h1>
+&lt;/div></description><category domain="https://nickilism.github.io/categories/%E6%95%99%E7%A8%8B/">教程</category><category domain="https://nickilism.github.io/tags/tech/">Tech</category><category domain="https://nickilism.github.io/tags/thoughts/">Thoughts</category><category domain="https://nickilism.github.io/tags/blog/">Blog</category></item><item><title>通过 iOS 发布的博文</title><link>https://nickilism.github.io/archive/22-05-27-%E9%80%9A%E8%BF%87-ios-%E5%8F%91%E5%B8%83%E7%9A%84%E5%8D%9A%E6%96%87/</link><guid isPermaLink="true">https://nickilism.github.io/archive/22-05-27-%E9%80%9A%E8%BF%87-ios-%E5%8F%91%E5%B8%83%E7%9A%84%E5%8D%9A%E6%96%87/</guid><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><description>&lt;h2 id="前言">前言&lt;/h2>
 &lt;p>上篇博文中，在折腾了好一番好终于让我调试好 Github Action 的设置，让 iOS 更新发布博文成为可能。由于生活习惯、设备持有情况的关系，我使用最多，获取最方便的还是手头的 iPhone，因此这一篇博文，我将要尝试在 iPhone 上进行撰写、发布。&lt;/p>
-&lt;h1 id="工具选择">工具选择&lt;/h1>
-&lt;h2 id="文本编辑">文本编辑&lt;/h2>
+&lt;h2 id="工具选择">工具选择&lt;/h2>
+&lt;h3 id="文本编辑">文本编辑&lt;/h3>
 &lt;p>作为长期 iOS 用户，我尝试过众多文本编辑软件，但最终能留在我手机第一屏的只有 &lt;a href="https://apps.apple.com/cn/app/drafts/id1236254471?l=en">Drafts&lt;/a>。它吸引我的有两点，一是打开迅速，二是有丰富的扩展能力。而且在撰写 Markdown 格式的文章上，Drafts 也有方便的配套功能。因为要发布的是基于 Hugo 的博文，因此要在文章头上加入相关信息，这一点可以利用 Drafts 自带的 action 方便的编写一个简单的生成动作。&lt;/p>
-&lt;pre tabindex="0">&lt;code>---
-title: &amp;#34;通过 iOS 发布的博文&amp;#34;
-date: 2022-05-27T19:44:32+8:00
-tags: [&amp;#34;&amp;#34;]
-categories: [&amp;#34;&amp;#34;]
-draft: false
----
-&lt;/code>&lt;/pre>&lt;p>上面的[[]]为Drafts内的模板标签。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-JavaScript" data-lang="JavaScript">&lt;span class="line">&lt;span class="cl">&lt;span class="o">---&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">title&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s2">&amp;#34;通过 iOS 发布的博文&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">date&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="mi">2022&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">05&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">27&lt;/span>&lt;span class="nx">T19&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="mi">44&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="mi">32&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">8&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="mi">00&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">tags&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">categories&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">draft&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="kc">false&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">---&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>上面的[[]]为Drafts内的模板标签。&lt;/p>
 &lt;p>除此之外，因为对于文章保存，在命名上我希望能根据日期有一个统一的格式，也利用 Drafts 的 action 编写了一个简单的脚本：&lt;/p>
-&lt;pre tabindex="0">&lt;code>function at(s){
-if(s&amp;lt;10)
-s=&amp;#34;0&amp;#34;+s
-return s
-}
-var now = new Date();
-var y = now.getFullYear().toString().substr(-2);
-var m = now.getMonth()+1;
-var d = now.getDate();
-var t = y + &amp;#34;-&amp;#34; + at(m) + &amp;#34;-&amp;#34; + at(d) + &amp;#34;-&amp;#34;;
-var range = editor.getLineRange(4,5)
-var title = t + editor.getTextInRange(range[0],range[1]).slice(8, -2)
-draft.setTemplateTag(&amp;#34;mytitle&amp;#34;, title);
-&lt;/code>&lt;/pre>&lt;h2 id="git-push">Git Push&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-JavaScript" data-lang="JavaScript">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">function&lt;/span> &lt;span class="nx">at&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">s&lt;/span>&lt;span class="p">){&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">s&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="mi">10&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">s&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;0&amp;#34;&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="nx">s&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="nx">s&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kd">var&lt;/span> &lt;span class="nx">now&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="nb">Date&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kd">var&lt;/span> &lt;span class="nx">y&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">now&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">getFullYear&lt;/span>&lt;span class="p">().&lt;/span>&lt;span class="nx">toString&lt;/span>&lt;span class="p">().&lt;/span>&lt;span class="nx">substr&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kd">var&lt;/span> &lt;span class="nx">m&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">now&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">getMonth&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kd">var&lt;/span> &lt;span class="nx">d&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">now&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">getDate&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kd">var&lt;/span> &lt;span class="nx">t&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">y&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="s2">&amp;#34;-&amp;#34;&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="nx">at&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">m&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="s2">&amp;#34;-&amp;#34;&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="nx">at&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">d&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="s2">&amp;#34;-&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kd">var&lt;/span> &lt;span class="nx">range&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">editor&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">getLineRange&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">4&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="mi">5&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kd">var&lt;/span> &lt;span class="nx">title&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">t&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="nx">editor&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">getTextInRange&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">range&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">],&lt;/span>&lt;span class="nx">range&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">]).&lt;/span>&lt;span class="nx">slice&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">8&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">draft&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">setTemplateTag&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;mytitle&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">title&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="git-push">Git Push&lt;/h3>
 &lt;p>文章编辑好后，下一步只用 push 到 Github 的对应仓库，剩下的所有工作就可以交给 Github Action 自动处理。而能将 Push 功能做好的，在 iOS 上目前首选应该就是&lt;a href="https://apps.apple.com/cn/app/working-copy-git-client/id896694807?l=en">Working Copy&lt;/a>了。&lt;/p>
-&lt;h1 id="流程">流程&lt;/h1>
+&lt;h2 id="流程">流程&lt;/h2>
 &lt;ol>
 &lt;li>用 Drafts 撰写文章；&lt;/li>
 &lt;li>用 Drafts 生成文章头；&lt;/li>
